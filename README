@@ -1,0 +1,50 @@
+CPP US (Unity Style) 
+
+Currently build only works on mac, and linux (Unless you find a way to build it and links SDL properly than it can run on Windows)
+
+This is not done in xcode, don't try to open it with xcode.
+Call makefile through terminal (Like in adventures in wonderlands)
+
+(I did my best to make it self contained, tried it one of my friends laptop without SDL2 and it worked, tried on another and it didn't)
+ but in case it isn't, drag SDL2 into your frameworks folder (from the ./Framework folder (if you have steam it's likely it's already there.)))
+
+If you don't want to build, you can always just play the already build executables in
+
+./Build/macBuild
+or the
+./Build/linuxBuild
+
+You can also download the latest SDL2 here if you want:
+https://www.libsdl.org/download-2.0.php
+
+Download and put in your frameworks folder (this assumes mac)
+
+
+
+
+
+Project:
+
+Setting up a simple 3d environment to walk through using SDL/(Glad/OpenGl)
+Learning opportunities, setting up opengl from glad allows for learning the opengl and 3d rendering pipeline better.
+
+
+
+I should point out that I changed my priorities from doing a simple game with it, to giving it better.
+I instead added the Transformation system, which allows for children, and recursive rendering using a Matrix stack
+This was definetly harder and more interesting to do than any of my goals, ether simple, medium, or end goal.
+
+Also I unlocked the mouse, because for some reason it wasn't working correctly on my friends mac that I tested it on, 
+
+
+Note:
+I wrote everything in src from scratch, except for the window setup part, which I got from 
+https://bcmpinc.wordpress.com/2015/08/18/creating-an-opengl-4-5-context-using-sdl2-and-glad/
+a long time ago, however used it and reused it in different projects, and I fully understand what everything inside of it does
+
+
+the glad.cpp script, and the KHR, and glad includes are gotten from:
+http://glad.dav1d.de/
+
+glm (OpenGL mathematics library) is gotten from:
+http://glm.g-truc.net/0.9.8/index.html
